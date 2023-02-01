@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            width: 70%;
+            margin: 0 auto;
+            padding: 0px;
+        }
+        header{
+            background-color: green;
+            position:fixed;
+            width: 70%;
+        }
+        ul{
+            padding: 0px;
+            margin: 0px;
+            display:inline;
+            float:right;
+        }
+        li{
+            margin: 0px;
+            padding: 0px 0px 0px 15px;
+            list-style:none;
+            display:inline;
+        }
+        .navDiv{
+            border:3px solid black;
+            font-size: 30px;
+            width: 99.6%;
+            display: flex;
+            justify-content:space-evenly;
+            color: blue;
+        }
+        .rightSpan{
+            float:right;
+            font-size:20px;
+        }
+        .leftSpan{
+            font-size:20px;
+        }
+        .storeDivLabel{
+            font-size: 50px;
+        }
+        .storeDiv{
+            padding: 100px;
+            text-align: center;
+        }
+        .imgDiv{
+            padding: 100px;
+            margin: 10px 30px;
+            background-color: #aaf;
+        }
+        .searchDiv{
+            margin: 50px 0px 150px 0px;
+            display: flex;
+            justify-content:space-evenly;
+        }
+        .searchDivInputText{
+            font-size: 40px;
+            width: 60%;
+        }
+        .searchDivInputButton{
+            font-size: 40px;
+        }
+        .searchDivLabel{
+            font-size: 40px;
+        }
+        .passDiv{
+            border-bottom: 1px solid black;
+        }
+        .passDivBottom{
+            display:inline-block;
+            margin: 0px 50px;
+        }
+        .passDivLabelLeft{
+            font-size: 30px;
+            margin: 0px 5%;
+        }
+        .passDivLabelRight{
+            float:right;
+            margin: 15px 30px 0px 0px;
+            text-decoration:none;
+        }
+        .passSpanLeftDiv{
+            margin: 20px 0px 0px 40px;
+            width: 200px;
+            height: 150px;
+            display:inline-block;
+            background-color: #aaa;
+            float:left;
+        }
+        .passSpanRight{
+
+        }
+        .passSpanRightDiv{
+            display:inline-block;
+            margin: 20px 0px 0px 40px;
+            float:left;
+            font-size: 30px;
+        }
+        .book{
+            margin: 150px 0px 0px 0px;
+        }
+        .about{
+            margin: 150px 0px 150px 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <span class="leftSpan">SOJU</span>
+            <span class = "rightSpan">
+                <ul>
+                    <li>이용권이 --일 남았습니다.</li>
+                    <li>알림</li>
+                    <li><input style="font-size:20px;" type="button" value="회원가입/로그인"></li>
+                </ul>
+            </span>
+        </div>
+        <div class="navDiv">
+            <a style="text-decoration:none;" href="/recruitstudy" >소중한 친구들 구하기</a>
+            <label>|</label>
+            <a style="text-decoration:none;" href="/meta">모임 공간</a>
+            <label>|</label>
+            <a style="text-decoration:none;" href="/noticeroom">게시판</a>
+            <label>|</label>
+            <a style="text-decoration:none;" href="/checklist">체크리스트</a>
+            <label>|</label>
+            <a style="text-decoration:none;" href="/store">스토어</a>
+            <label>|</label>
+            <a style="text-decoration:none;" href="/mypage">마이페이지</a>
+        </div>
+    </header>
+    <div class="storeDiv">
+        <label class="storeDivLabel">스토어</label>
+    </div>
+    <div class="imgDiv">
+        <input type="hidden" value="광고">
+    </div>
+    <div class="searchDiv">
+        <label class="searchDivLabel">검색</label>
+        <input type="text" class="searchDivInputText">
+        <input type="button" class="searchDivInputButton" value="검색하기">
+    </div>
+    <div class="pass">
+        <div class="passDiv">
+            <label class="passDivLabelLeft">이용권</label>
+            <a href="/store/membershiplist" class="passDivLabelRight">+더보기</a>
+        </div>
+        <div class="passDivBottom">
+            <span class="passSpanLeft">
+                <div class="passSpanLeftDiv">
+                    <input type="hidden" value="사진">
+                </div>
+            </span>
+                <span class="passSpanRight">
+                <div class="passSpanRightDiv">
+                    <div>이용권 이름</div>
+                    <div>이용권 가격</div>
+                    <div>이용권 설명</div>
+                </div>
+            </span>
+        </div>
+    </div>
+    <div class="book">
+        <div class="passDiv">
+            <label class="passDivLabelLeft">교재</label>
+            <a href="/store/booklist" class="passDivLabelRight">+더보기</a>
+        </div>
+        <div class="passDivBottom">
+            <span class="passSpanLeft">
+                <div class="passSpanLeftDiv">
+                    <input type="hidden" value="사진">
+                </div>
+            </span>
+            <span class="passSpanRight">
+                <div class="passSpanRightDiv">
+                    <div>교재 이름</div>
+                    <div>교재 가격</div>
+                    <div>교재 설명</div>
+                </div>
+            </span>
+        </div>
+    </div>
+    <div class="about">
+        <div class="passDiv">
+            <label class="passDivLabelLeft">기타</label>
+            <a href="/store/etclist" class="passDivLabelRight">+더보기</a>
+        </div>
+        <div class="passDivBottom">
+            <span class="passSpanLeft">
+                <div class="passSpanLeftDiv">
+                    <input type="hidden" value="사진">
+                </div>
+            </span>
+            <span class="passSpanRight">
+                <div class="passSpanRightDiv">
+                    <div>기타 이름</div>
+                    <div>기타 가격</div>
+                    <div>기타 설명</div>
+                </div>
+            </span>
+        </div>
+    </div>
+
+</body>
+</html>
