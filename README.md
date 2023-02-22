@@ -55,3 +55,24 @@ Store구현중
 		itemName VARCHAR(50) NOT NULL
 	);
 	
+## 변경된 사항(02/22)
+### pay 테이블에 환불결과를 저장할 항목 추가
+	CREATE TABLE Pay(
+		impUid VARCHAR(200) PRIMARY KEY,
+		merchantUid VARCHAR(200),
+		PGname VARCHAR(50), 
+		payMethod VARCHAR(300),
+		itemName VARCHAR(50),
+		price INT,
+		buyerEmail VARCHAR(50),
+		buyerName VARCHAR(20),
+		buyerTel VARCHAR(20),
+		buyerAddress VARCHAR(50),
+		buyerPostNum VARCHAR(50),
+		itemCount INT,
+		isPaid INT
+	);
+
+### 결제가 완료 되었는지 아임포트쪽 RestAPI를 사용해서 확인
+### 환불 신청시 isPaid를 1로 변경 해서 환불버튼을 환불처리중 이라는 메세지로 변경
+### 환불 완료시 isPaid를 2로 변경 해서 메세지를 환불처리완료 로 변경
