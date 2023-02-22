@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        body{
+            width: 100%;
+            margin: 0 auto;
+            padding: 0px;
+        }
+        header{
+            position:fixed;
+            margin-top: 10px;
+            margin: 0% 15% 0% 15%;
+            width: 70%;
+            height: 80px;
+            background-color: white;
+            border-bottom: 5px solid #57B862;
+        }
+        .blankDiv{
+            width: 100%;
+            height: 20%;
+        }
+        .bodyDiv{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content:space-evenly;
+        }
+        .bodyDivLeft{
+            width: 20%;
+            height: 100%;
+        }
+        .bodyDivLeftDiv{
+            width: 90%;
+            height: 70%;
+            margin: 35% 5% 15% 5%;
+        }
+        .bodyDivLeftDivTitle{
+            font-size: 30px;
+            width: 100%;
+            height: 10%;
+            border-bottom: 5px solid #57B862;
+        }
+        .bodyDivLeftDivTitleText{
+            width: 80%;
+            height: 50%;
+            margin: 6% 25% 6% 5%;
+            display: inline-block;
+        }
+        .bodyDivLeftDivBody{
+            width: 100%;
+            height: 90%;
+        }
+        .bodyDivLeftDivBody1{
+            font-size: 20px;
+            margin: 0% 0% 0% 10%;
+            width: 90%;
+            height: 10%;
+        }
+        .bodyDivLeftDivBody1Text{
+            width: 50%;
+            height: 50%;
+            margin: 8% 25% 6% 5%;
+            display: inline-block;
+        }
+        .bodyDivLeftDivBody2{
+            font-size: 20px;
+            margin: 0% 0% 0% 10%;
+            width: 90%;
+            height: 10%;
+        }
+        .bodyDivLeftDivBody2Text{
+            width: 50%;
+            height: 50%;
+            margin: 8% 25% 6% 5%;
+            display: inline-block;
+        }
+        .bodyDivLeftDivBody3{
+            font-size: 20px;
+            margin: 0% 0% 0% 10%;
+            width: 90%;
+            height: 10%;
+        }
+        .bodyDivLeftDivBody3Text{
+            width: 50%;
+            height: 50%;
+            margin: 8% 25% 6% 5%;
+            display: inline-block;
+        }
+        .bodyDivCenter{
+            width: 60%;
+            height: 100%;
+        }
+        .bodyDivCenterTop{
+            width: 100%;
+            height: 20%;
+        }
+        .bodyDivCenterTopTitle{
+            width: 100%;
+            height: 50%;
+            font-size: 40px;
+            text-align: center;
+        }
+        .bodyDivCenterTopBody{
+            width: 100%;
+            height: 50%;
+            font-size: 30px;
+            text-align: center;
+        }
+        .bodyDivCenterBottom{
+            width: 100%;
+            height: 80%;
+        }
+        .bodyDivCenterBottomTop{
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content:space-evenly;
+        }
+        .bodyDivCenterBottomTopSelect{
+            padding: 0%;
+            margin: 0%;
+            width: 18%;
+            height: 100%;
+            display: inline-block;
+        }
+        .bodyDivCenterBottomTopSelectSelect{
+            font-size: 20px;
+            width: 60%;
+            height: 25%;
+            padding: 0%;
+            margin: 32.5% 20% 0% 20%;
+        }
+        .bodyDivCenterBottomTopText{
+            padding: 0%;
+            margin: 0%;
+            width: 60%;
+            height: 100%;
+            display: inline-block;
+        }
+        .bodyDivCenterBottomTopTextInput{
+            font-size: 30px;
+            width: 60%;
+            height: 25%;
+            padding: 0%;
+            margin: 10% 20% 0% 20%;
+        }
+        .bodyDivCenterBottomTopButton{
+            padding: 0%;
+            margin: 0%;
+            width: 18%;
+            height: 100%;
+            display: inline-block;
+        }
+        .bodyDivCenterBottomTopButtonInput{
+            font-size: 20px;
+            width: 60%;
+            height: 25%;
+            padding: 0%;
+            margin: 32.5% 20% 0% 20%;
+        }
+        .bodyDivCenterBottomBottom{
+            width: 100%;
+            height: 80%;
+        }
+        .bodyDivCenterBottomBottomTop{
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content:space-evenly;
+            border-bottom: 2px solid black;
+        }
+        .bodyDivCenterBottomBottomTopText{
+            width: 80%;
+            height: 100%;
+            padding: 0% 0% 0% 5%;
+            font-size: 20px;
+        }
+        .bodyDivCenterBottomBottomTopTextDiv{
+            width: 50%;
+            height: 100%;
+            margin: 3% 0% 0% 0%;
+            display: inline-block;
+        }
+        .bodyDivCenterBottomBottomTopInput{
+            width: 20%;
+            height: 100%;
+            font-size: 20px;
+        }
+        .bodyDivCenterBottomBottomTopInputButton{
+            width: 50%;
+            height: 60%;
+            margin: 5% 20%;
+        }
+        .bodyDivCenterBottomBottomCenter{
+            width: 100%;
+            height: 75%;
+        }
+        .bodyDivCenterBottomBottomCenterTop{
+            width: 80%;
+            height: 42.5%;
+            margin: 5% 10% 0% 10%;
+            display: flex;
+            align-items: center;
+            justify-content:space-evenly;
+        }
+        .box{
+            width: 20%;
+            height: 80%;
+            border: 1px solid black;
+        }
+        .boxImg{
+            width: 70%;
+            height: 70%;
+            margin: 0% 15% 0% 15%;
+            background-color: #aaf;
+        }
+        .boxImgText{
+            display: flex;
+            padding: 5%;
+            width: 35%;
+            height: 15%;
+            background-color: #9f0;
+            align-items: center;
+        }
+        .boxText{
+            width: 100%;
+            height: 25%;
+            margin-top: 5%;
+        }
+        .boxTextTitle{
+            font-size: 20px;
+            width: 100%;
+            height: 50%;
+        }
+        .boxTextBody{
+            font-size: 15px;
+            width: 100%;
+            margin-top: 3%;
+            height: 30%;
+        }
+        .bodyDivCenterBottomBottomCenterBottom{
+            width: 80%;
+            height: 42.5%;
+            margin: 5% 10% 0% 10%;
+            display: flex;
+            align-items: center;
+            justify-content:space-evenly;
+        }
+        .bodyDivCenterBottomBottomBottom{
+            width: 100%;
+            height: 5%;
+        }
+        .bodyDivCenterBottomBottomBottomPage{
+            width: 20%;
+            height: 100%;
+            margin: 0% 40% 0% 40%;
+            display: flex;
+            justify-content:space-evenly;
+        }
+        .bodyDivRight{
+            width: 20%;
+            height: 100%;
+        }
+        .bodyDivRightImg{
+            width: 80%;
+            height: 60%;
+            margin: 20% 10% 20% 10%;
+            background-color: #aaf;
+        }
+        .footer{
+            width: 100%;
+            height: 3%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="topDiv">
+            <span class="leftSpan" onclick="location.href='/'">SOJU</span>
+            <span class = "rightSpan">
+                <ul>
+                    <li class="rightSpanText">이용권이 <span>30</span>일 남았습니다.</li>
+                    <li style="cursor: pointer;">
+                        <div class="icon" data-number="5">
+                            <i class="ri-notification-4-fill"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <input class="inputButton" sec:authorize="isAnonymous()" type="button" value="회원가입/로그인" onclick="location.href='/loginform'">
+                        <input class="inputButton" sec:authorize="isAuthenticated()" type="button" value="로그아웃" onclick="location.href='/logout'">
+                    </li>
+                </ul>
+            </span>
+        </div>
+        <div class="navDiv">
+            <a style="text-decoration:none; color: black;" href="/recruitstudy" >소중한 친구들 구하기</a>
+            <label>|</label>
+            <a style="text-decoration:none; color: black;" href="/meta">모임 공간</a>
+            <label>|</label>
+            <a style="text-decoration:none; color: black;" href="/noticeroom">게시판</a>
+            <label>|</label>
+            <a style="text-decoration:none; color: black;" href="/checklist">체크리스트</a>
+            <label>|</label>
+            <a style="text-decoration:none; color: black;" href="/store">스토어</a>
+            <label>|</label>
+            <a style="text-decoration:none; color: black;" href="/mypage">마이페이지</a>
+        </div>
+    </header>
+    <div class="blankDiv">
+        <input type="hidden" value="빈공간 추가">
+    </div>
+    <div class="bodyDiv">
+        <div class="bodyDivLeft">
+            <div class="bodyDivLeftDiv">
+                <div class="bodyDivLeftDivTitle">
+                    <label class="bodyDivLeftDivTitleText">소중한 친구들 구하기</label>
+                </div>
+                <div class="bodyDivLeftDivBody">
+                    <div class="bodyDivLeftDivBody1">
+                        <label class="bodyDivLeftDivBody1Text">스터디원 모집</label>
+                    </div>
+                    <div class="bodyDivLeftDivBody2">
+                        <label class="bodyDivLeftDivBody2Text">멘토 모집</label>
+                    </div>
+                    <div class="bodyDivLeftDivBody3">
+                        <label class="bodyDivLeftDivBody3Text">멘토 프로필</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bodyDivCenter">
+            <div class="bodyDivCenterTop">
+                <div class="bodyDivCenterTopTitle">
+                    <label>스터디원 모집</label>
+                </div>
+                <div class="bodyDivCenterTopBody">
+                    <label>같이 공부할 수 있는 소중한 모임을 만들어 보세요</label>
+                </div>
+            </div>
+            <div class="bodyDivCenterBottom">
+                <div class="bodyDivCenterBottomTop">
+                    <div class="bodyDivCenterBottomTopSelect">
+                        <select class="bodyDivCenterBottomTopSelectSelect">
+                            <option>뭐넣어?</option>
+                            <option>난 몰루</option>
+                            <option>집가고싶다</option>
+                            <option>졸려</option>
+                        </select>
+                    </div>
+                    <div class="bodyDivCenterBottomTopText">
+                        <input class="bodyDivCenterBottomTopTextInput" type="text">
+                    </div>
+                    <div class="bodyDivCenterBottomTopButton">
+                        <input class="bodyDivCenterBottomTopButtonInput" type="button" value="검색">
+                    </div>
+                </div>
+                <div class="bodyDivCenterBottomBottom">
+                    <div class="bodyDivCenterBottomBottomTop">
+                        <div class="bodyDivCenterBottomBottomTopText">
+                            <div class="bodyDivCenterBottomBottomTopTextDiv">
+                                <a>전체</a>
+                                <label>|</label>
+                                <a>모집중</a>
+                                <label>|</label>
+                                <a>모집완료</a>
+                            </div>
+                        </div>
+                        <div class="bodyDivCenterBottomBottomTopInput">
+                            <input class="bodyDivCenterBottomBottomTopInputButton" type="button" value="글쓰기" onclick="location.href='/recruitstudy/writeform'">
+                        </div>
+                    </div>
+                    <div class="bodyDivCenterBottomBottomCenter">
+                        <div class="bodyDivCenterBottomBottomCenterTop">
+                            <div class="box" onclick="location.href='/recruitstudy/1'">
+                                <div class="boxImg">
+                                    <div class="boxImgText">
+                                        <span>모집중</span>
+                                    </div>
+                                </div>
+                                <div class="boxText">
+                                    <div class="boxTextTitle">
+                                        <span>토익 800빵 할사람</span>
+                                    </div>
+                                    <div class="boxTextBody">
+                                        <span>공부에 진심인 밤톨</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="boxImg">
+                                    <div class="boxImgText">
+                                        <span>모집중</span>
+                                    </div>
+                                </div>
+                                <div class="boxText">
+                                    <div class="boxTextTitle">
+                                        <span>토익 800빵 할사람</span>
+                                    </div>
+                                    <div class="boxTextBody">
+                                        <span>공부에 진심인 밤톨</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="boxImg">
+                                    <div class="boxImgText">
+                                        <span>모집중</span>
+                                    </div>
+                                </div>
+                                <div class="boxText">
+                                    <div class="boxTextTitle">
+                                        <span>토익 800빵 할사람</span>
+                                    </div>
+                                    <div class="boxTextBody">
+                                        <span>공부에 진심인 밤톨</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="boxImg">
+                                    <div class="boxImgText">
+                                        <span>모집중</span>
+                                    </div>
+                                </div>
+                                <div class="boxText">
+                                    <div class="boxTextTitle">
+                                        <span>토익 800빵 할사람</span>
+                                    </div>
+                                    <div class="boxTextBody">
+                                        <span>공부에 진심인 밤톨</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bodyDivCenterBottomBottomCenterBottom">
+                            <div class="box">
+                                <div class="boxImg">
+                                    <div class="boxImgText">
+                                        <span>모집중</span>
+                                    </div>
+                                </div>
+                                <div class="boxText">
+                                    <div class="boxTextTitle">
+                                        <span>토익 800빵 할사람</span>
+                                    </div>
+                                    <div class="boxTextBody">
+                                        <span>공부에 진심인 밤톨</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="boxImg">
+                                    <div class="boxImgText">
+                                        <span>모집중</span>
+                                    </div>
+                                </div>
+                                <div class="boxText">
+                                    <div class="boxTextTitle">
+                                        <span>토익 800빵 할사람</span>
+                                    </div>
+                                    <div class="boxTextBody">
+                                        <span>공부에 진심인 밤톨</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="boxImg">
+                                    <div class="boxImgText">
+                                        <span>모집중</span>
+                                    </div>
+                                </div>
+                                <div class="boxText">
+                                    <div class="boxTextTitle">
+                                        <span>토익 800빵 할사람</span>
+                                    </div>
+                                    <div class="boxTextBody">
+                                        <span>공부에 진심인 밤톨</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="boxImg">
+                                    <div class="boxImgText">
+                                        <span>모집중</span>
+                                    </div>
+                                </div>
+                                <div class="boxText">
+                                    <div class="boxTextTitle">
+                                        <span>토익 800빵 할사람</span>
+                                    </div>
+                                    <div class="boxTextBody">
+                                        <span>공부에 진심인 밤톨</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bodyDivCenterBottomBottomBottom">
+                        <div class="bodyDivCenterBottomBottomBottomPage">
+                            <a>&lt</a>
+                            <a>1</a>
+                            <a>2</a>
+                            <a>3</a>
+                            <a>4</a>
+                            <a>5</a>
+                            <a>&gt</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bodyDivRight">
+            <div class="bodyDivRightImg">
+                <input type="hidden" value="광고">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <span>개인정보 처리방침 /</span>
+        <span>고객센터 어쩌구 저쩌구</span>
+    </div>
+</body>
+</html>
