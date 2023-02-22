@@ -110,6 +110,7 @@ public class StoreController {
 
         JsonNode payment = IamPortPass.getUserInfo(pay.getImpUid(), accessToken);
         System.out.println(payment);
+        //가져온 json 형식의  payment 를 문자열로 변환
         String status = payment.get("response").get("status").asText();
         String resImpUid = payment.get("response").get("imp_uid").asText();
         String resMerchantUid = payment.get("response").get("merchant_uid").asText();
@@ -118,6 +119,7 @@ public class StoreController {
         if(pay.getImpUid().equals(resImpUid)){
             if(pay.getMerchantUid().equals(resMerchantUid)){
                 if(status.equalsIgnoreCase("paid")){
+                    //만약 모든 결과값이 일치한다면 결제 완료된 정보를 데이터베이스에 저장
                     payService.insertPay(pay);
                     res = "yes";
                 }

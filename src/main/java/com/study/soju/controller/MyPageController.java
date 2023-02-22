@@ -27,9 +27,11 @@ public class MyPageController {
 
     @GetMapping("/perchaselist")
     public String perchaseList(Principal principal, Model model){
-        //구매내역 갖고와서 리스트로 뿌려주자
+        //Principal로 유저 emailId 가져오기
         String emailId = principal.getName();
+        //유저 이메일로 모든 결제 내역 가져오기
         List<Pay> findPay = payService.findPay(emailId);
+        //결제내역 바인딩
         model.addAttribute("payList", findPay);
         return "MyPage/PerchaseList";
     }
@@ -37,13 +39,14 @@ public class MyPageController {
     @PostMapping("/perchaselist/refundcheck")
     @ResponseBody
     public String refundCheck(Pay pay){
+        //환불 버튼을 눌렀을때 작업할 내용
         String res = "no";
-        //이제 db 에서내용을 바꿔주고 관리자에게 연락이 가게 해야지 근데 그건 아직 방법을 못정해서 암튼 ㄱㄷ
+        //가져온 impUid 로 환불할 결제 항목을 가져오기
         Pay resPay = payService.refundCheck(pay.getImpUid());
         if(resPay != null){
+            //값이 잘 담겨있다면 내용을 환불진행중으로 바꾸기위해 업데이트
             payService.updatePay(resPay);
-            //이제 관리자한테 연락만 가면 되는데
-            //어케하지
+            //이후 yes 로 변경해서 값이 잘 변경 되었는지 알려주기
             res = "yes";
         }
         return res;

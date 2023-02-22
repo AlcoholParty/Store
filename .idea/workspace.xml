@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7567bdd5-a5b4-43e1-9a61-094de46ad970" name="Changes" comment="결제 완료한것을 아임포트 서버와 연동해서 재확인작업&#10;환불 처리 작업" />
+    <list default="true" id="7567bdd5-a5b4-43e1-9a61-094de46ad970" name="Changes" comment="결제 완료한것을 아임포트 서버와 연동해서 재확인작업&#10;환불 처리 작업">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/soju/controller/MyPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/soju/controller/MyPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/soju/controller/StoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/soju/controller/StoreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/soju/repository/PayRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/soju/repository/PayRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/soju/service/PayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/soju/service/PayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/MyPage/PerchaseList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/MyPage/PerchaseList.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -124,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677051655383</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="결제 완료한것을 아임포트 서버와 연동해서 재확인작업&#10;환불 처리 작업">
+      <created>1677051687038</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677051687038</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,7 +146,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

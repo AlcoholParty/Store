@@ -36,9 +36,10 @@
     <script type="text/javascript" src="/js/httpRequest.js"></script>
     <script>
         function c(merchantUid, email, impUid) {
+            //정말로 환불 할껀지 확인
             let result = confirm("환불하시겠습니까??");
             if(result == true){
-                //alert("환불");
+                //만약 확인을 눌렀다면 환불 진행
                 let url = "/mypage/perchaselist/refundcheck";
                 let param = "merchantUid=" + merchantUid +
                             "&impUid=" + impUid +
@@ -58,6 +59,7 @@
 		        } else {
                     //환불신청 성공 로직
                     alert("환불 요청 성공");
+                    //변경된 값을 보여주기 위해서 reload 를 한다.
                     window.location.reload();
 		        }
 	        }
