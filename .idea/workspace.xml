@@ -4,85 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7567bdd5-a5b4-43e1-9a61-094de46ad970" name="Changes" comment="Store구현 및 결제 API 연동">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/soju/config/IamPortPass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/soju/controller/MyPageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/computer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/design.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/education.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/employment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/engineer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/entrance.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/etc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/game.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/language.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/left-arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/literature.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/management.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/math.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/right-arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/moveDiv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/storeCount.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/storePayPopup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Meta/SelfStudyRoom.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/MyPage/MyPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/MyPage/PerchaseList.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Recriute/Recriute.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Recriute/RecriuteStudy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Recriute/WriteForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/study/soju/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/study/soju/controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/study/soju/controller/MetaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/study/soju/controller/MetaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/study/soju/controller/StoreController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/study/soju/controller/StoreController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/study/soju/entity/Meta.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/study/soju/entity/Meta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/study/soju/repository/MetaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/study/soju/repository/MetaRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/study/soju/service/MetaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/study/soju/service/MetaService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/study/soju/service/PayService$PayServiceBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/study/soju/service/PayService$PayServiceBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/study/soju/service/PayService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/study/soju/service/PayService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/Main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/Meta/CafeRoom.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/Meta/CafeRoom.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/Meta/MetaRoom.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/Meta/MetaRoom.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/SignUp/LoginForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/SignUp/LoginForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/Store/BookList.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/Store/BookList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/Store/EtcList.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/Store/EtcList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/Store/MemberShipList.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/Store/MemberShipList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/Store/Pay.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/Store/Pay.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/Store/PayPopup.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/Store/PayPopup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/Store/Store.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/Store/Store.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/StoreController.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/soju/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/soju/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/soju/controller/MetaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/soju/controller/MetaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/soju/controller/StoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/soju/controller/StoreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/soju/entity/Meta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/soju/entity/Meta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/soju/entity/Pay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/soju/entity/Pay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/soju/repository/MetaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/soju/repository/MetaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/soju/repository/PayRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/soju/repository/PayRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/soju/service/MetaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/soju/service/MetaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/soju/service/PayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/soju/service/PayService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Meta/CafeRoom.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Meta/CafeRoom.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Meta/MetaRoom.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Meta/MetaRoom.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/SignUp/LoginForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/SignUp/LoginForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Store/BookList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Store/BookList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Store/EtcList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Store/EtcList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Store/MemberShipList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Store/MemberShipList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Store/Pay.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Store/Pay.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Store/PayPopup.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Store/PayPopup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Store/Store.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Store/Store.html" afterDir="false" />
-    </list>
+    <list default="true" id="7567bdd5-a5b4-43e1-9a61-094de46ad970" name="Changes" comment="결제 완료한것을 아임포트 서버와 연동해서 재확인작업&#10;환불 처리 작업" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,15 +39,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/bagseunghwan/Documents/intellij파일/store&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/bagseunghwan/Documents/intellij파일/store",
+    "settings.editor.selected.configurable": "vcs.Git"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
@@ -188,7 +110,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675233754314</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="결제 완료한것을 아임포트 서버와 연동해서 재확인작업&#10;환불 처리 작업">
+      <created>1677051540126</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677051540126</updated>
+    </task>
+    <task id="LOCAL-00004" summary="결제 완료한것을 아임포트 서버와 연동해서 재확인작업&#10;환불 처리 작업">
+      <created>1677051655383</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677051655383</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,7 +143,8 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="Store구현 및 결제 API 연동" />
-    <option name="LAST_COMMIT_MESSAGE" value="Store구현 및 결제 API 연동" />
+    <MESSAGE value="결제 완료한것을 아임포트 서버와 연동해서 재확인작업&#10;환불 처리 작업" />
+    <option name="LAST_COMMIT_MESSAGE" value="결제 완료한것을 아임포트 서버와 연동해서 재확인작업&#10;환불 처리 작업" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
