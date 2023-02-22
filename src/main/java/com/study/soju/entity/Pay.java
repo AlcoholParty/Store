@@ -52,4 +52,10 @@ public class Pay {
     @Column(nullable = false)
     private int itemCount;
 
+    @Column(nullable = false)
+    private int isPaid;
+    //0 : 결제 완료
+    //1 : 환불 처리중
+    //2 : 환불 완료
+
 }

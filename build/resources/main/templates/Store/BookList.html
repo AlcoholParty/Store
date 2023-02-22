@@ -1,52 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <style>
-        body{
-            width: 70%;
-            height: 100%;
-            margin: 0 auto;
-            padding: 0px;
-        }
-        header{
-            background-color: green;
-            position:fixed;
-            width: 70%;
-        }
-        ul{
-            padding: 0px;
-            margin: 0px;
-            display:inline;
-            float:right;
-        }
-        li{
-            margin: 0px;
-            padding: 0px 0px 0px 15px;
-            list-style:none;
-            display:inline;
-        }
-        .navDiv{
-            border:3px solid black;
-            font-size: 30px;
-            width: 99.6%;
-            display: flex;
-            justify-content:space-evenly;
-            color: blue;
-        }
-        .rightSpan{
-            float:right;
-            font-size:20px;
-        }
-        .leftSpan{
-            font-size:20px;
-        }
         .storeDivLabel{
             font-size: 50px;
         }
         .storeDiv{
-            padding: 100px;
+            padding: 200px;
             text-align: center;
         }
         .imgDiv{
@@ -118,68 +82,75 @@
             padding: 0px;
             margin: 0px;
         }
-
     </style>
 </head>
 <body>
-<header>
-    <div>
-        <span class="leftSpan">SOJU</span>
-        <span class = "rightSpan">
+    <header>
+        <div class="topDiv">
+            <span class="leftSpan" onclick="location.href='/'">SOJU</span>
+            <span class = "rightSpan">
                 <ul>
-                    <li>이용권이 --일 남았습니다.</li>
-                    <li>알림</li>
-                    <li><input style="font-size:20px;" type="button" value="회원가입/로그인"></li>
+                    <li class="rightSpanText">이용권이 <span>30</span>일 남았습니다.</li>
+                    <li style="cursor: pointer;">
+                        <div class="icon" data-number="5">
+                            <i class="ri-notification-4-fill"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <input class="inputButton" sec:authorize="isAnonymous()" type="button" value="회원가입/로그인" onclick="location.href='/loginform'">
+                        <input class="inputButton" sec:authorize="isAuthenticated()" type="button" value="로그아웃" onclick="location.href='/logout'">
+                    </li>
                 </ul>
             </span>
+        </div>
+        <div class="navDiv">
+            <a style="text-decoration:none; color: black;" href="/recruitstudy" >소중한 친구들 구하기</a>
+            <label>|</label>
+            <a style="text-decoration:none; color: black;" href="/meta">모임 공간</a>
+            <label>|</label>
+            <a style="text-decoration:none; color: black;" href="/noticeroom">게시판</a>
+            <label>|</label>
+            <a style="text-decoration:none; color: black;" href="/checklist">체크리스트</a>
+            <label>|</label>
+            <a style="text-decoration:none; color: black;" href="/store">스토어</a>
+            <label>|</label>
+            <a style="text-decoration:none; color: black;" href="/mypage">마이페이지</a>
+        </div>
+    </header>
+    <div class="storeDiv">
+        <label class="storeDivLabel">스토어</label>
     </div>
-    <div class="navDiv">
-        <a style="text-decoration:none;" href="/recruitstudy" >소중한 친구들 구하기</a>
-        <label>|</label>
-        <a style="text-decoration:none;" href="/meta">모임 공간</a>
-        <label>|</label>
-        <a style="text-decoration:none;" href="/noticeroom">게시판</a>
-        <label>|</label>
-        <a style="text-decoration:none;" href="/checklist">체크리스트</a>
-        <label>|</label>
-        <a style="text-decoration:none;" href="/store">스토어</a>
-        <label>|</label>
-        <a style="text-decoration:none;" href="/mypage">마이페이지</a>
+    <div class="imgDiv">
+        <input type="hidden" value="광고">
     </div>
-</header>
-<div class="storeDiv">
-    <label class="storeDivLabel">스토어</label>
-</div>
-<div class="imgDiv">
-    <input type="hidden" value="광고">
-</div>
-<div class="searchDiv">
-    <label class="searchDivLabel">검색</label>
-    <input type="text" class="searchDivInputText">
-    <input type="button" class="searchDivInputButton" value="검색하기">
-</div>
-<div class="pass">
-    <div class="passDiv">
-        <div class="passDivLabel">교재</div>
+    <div class="searchDiv">
+        <label class="searchDivLabel">검색</label>
+        <input type="text" class="searchDivInputText">
+        <input type="button" class="searchDivInputButton" value="검색하기">
     </div>
-    <!-- 이거만 리스트로 돌리면 될꺼같음 -->
-    <div class="passDivBottom">
-            <span class="passSpanLeft">
-                <div class="passSpanLeftDiv">
-                    <input type="hidden" class="passSpanLeftDivImg" value="사진">
-                </div>
-            </span>
-        <span class="passSpanRight">
-                <div class="passSpanRightDiv">
-                    <div class="passSpanRightDiv1">교재 이름</div>
-                    <div class="passSpanRightDiv2">교재 가격</div>
-                    <div class="passSpanRightDiv3">
-                        <p class="passSpanRightDivP">교재 내용</p>
+    <div class="pass">
+        <div class="passDiv">
+            <div class="passDivLabel">교재</div>
+        </div>
+        <!-- 이거만 리스트로 돌리면 될꺼같음 -->
+        <div th:each="store:${categoryList}">
+            <div class="passDivBottom" th:onclick="|location.href='/store/pay?itemName=@{${store.itemName}}'|">
+                <span class="passSpanLeft">
+                    <div class="passSpanLeftDiv">
+                        <input type="hidden" class="passSpanLeftDivImg" value="사진">
                     </div>
-                </div>
-            </span>
+                </span>
+                <span class="passSpanRight">
+                    <div class="passSpanRightDiv">
+                        <div th:id="${store.itemName}" class="passSpanRightDiv1" th:text="${store.itemName}"></div>
+                        <div class="passSpanRightDiv2" th:text="${store.price} + '원'"></div>
+                        <div class="passSpanRightDiv3">
+                            <p class="passSpanRightDivP" th:text="${store.introduce}"></p>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
     </div>
-
-</div>
 </body>
 </html>

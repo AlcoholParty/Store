@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        .blankDiv{
+            width: 100%;
+            height: 150px;
+        }
+        .titleDiv{
+            width: 70%;
+            margin: 0% 15% 0% 15%;
+            height: 20%;
+        }
+        .title{
+            width: 100%;
+            height: 40%;
+            margin-top: 10%;
+            font-size: 40px;
+            text-align: center;
+        }
+        .content1{
+            width: 100%;
+            height: 25%;
+            font-size: 30px;
+            text-align: center;
+        }
+        .content2{
+            width: 100%;
+            height: 25%;
+            font-size: 30px;
+            text-align: center;
+        }
+        .bodyDiv{
+            width: 70%;
+            margin: 0% 15% 0% 15%;
+            height: 90%;
+        }
+        .divTitle{
+            width: 100%;
+            height: 10%;
+            display:flex;
+        }
+        .divTitle1{
+            width: 30%;
+            height: 100%;
+            text-align: center;
+            display: grid;
+            align-items: center;
+        }
+        .divTitle1Span{
+            width:80%:
+            height: 80%;
+            margin: 10%;
+            font-size: 40px;
+            display: inline-block;
+        }
+        .divTitle2{
+            width: 70%;
+            height: 100%;
+            text-align: center;
+            display: grid;
+            align-items: center;
+        }
+        .divTitle2Input{
+            padding: 0%;
+            width: 90%;
+            height: 40%;
+            font-size: 35px;
+        }
+        .divGroup{
+            width: 100%;
+            height: 10%;
+            display:flex;
+        }
+        .divGroup1{
+            width: 30%;
+            height: 100%;
+            text-align: center;
+            display: grid;
+            align-items: center;
+        }
+        .divGroup1Span{
+            width:80%:
+            height: 80%;
+            margin: 10%;
+            font-size: 40px;
+            display: inline-block;
+        }
+        .divGroup2{
+            width: 70%;
+            height: 100%;
+            text-align: center;
+            display: grid;
+            align-items: center;
+        }
+        .divGroup2Select{
+            padding: 0%;
+            width: 50%;
+            height: 40%;
+            font-size: 30px;
+        }
+        .divPersonnel{
+            width: 100%;
+            height: 10%;
+            display: flex;
+        }
+        .divPersonnel1{
+            width: 30%;
+            height: 100%;
+            text-align: center;
+            display: grid;
+            align-items: center;
+        }
+        .divPersonnel1Span{
+            width:80%:
+            height: 80%;
+            margin: 10%;
+            font-size: 40px;
+            display: inline-block;
+        }
+        .divPersonnel2{
+            width: 70%;
+            height: 100%;
+            text-align: center;
+            display: grid;
+            align-items: center;
+        }
+        .divPersonnel2Select{
+            padding: 0%;
+            width: 50%;
+            height: 40%;
+            font-size: 30px;
+        }
+        .divTitleImg{
+            width: 100%;
+            height: 20%;
+            display: flex;
+        }
+        .divTitleImg1{
+            width: 30%;
+            height: 100%;
+            text-align: center;
+            display: grid;
+            align-items: center;
+        }
+        .divTitleImg1Span{
+            width:80%:
+            height: 80%;
+            margin: 10%;
+            font-size: 40px;
+            display: inline-block;
+        }
+        .divTitleImg2{
+            width: 70%;
+            height: 100%;
+            text-align: center;
+            display: grid;
+            align-items: center;
+        }
+        .divTitleImg2Div{
+            width: 100%;
+            height: 100%;
+            background-color: #aaf;
+        }
+        .divIntroduce{
+            width: 100%;
+            height: 45%;
+        }
+        .divIntroduce1{
+            width: 100%;
+            height: 15%;
+            font-size: 40px;
+        }
+        .divIntroduce1Span{
+            display: inline-block;
+            margin: 2% 0% 0% 5%;
+        }
+        .divIntroduce2{
+            width: 100%;
+            height: 85%;
+        }
+        .divIntroduce2Text{
+            width: 99%;
+            height: 95%;
+            font-size: 30px;
+            resize: none;
+        }
+        .divButton{
+            width: 100%;
+            height: 5%;
+        }
+        .divButtonDiv{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+        .divButtonDivButton{
+            width: 20%;
+            height: 100%;
+            margin: 0% 40% 0% 40%;
+            font-size: 30px;
+        }
+        .footer{
+            width: 100%;
+            height: 2%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="topDiv">
+            <span class="leftSpan" onclick="location.href='/'">SOJU</span>
+            <span class = "rightSpan">
+                <ul>
+                    <li class="rightSpanText">이용권이 <span>30</span>일 남았습니다.</li>
+                    <li style="cursor: pointer;">
+                        <div class="icon" data-number="5">
+                            <i class="ri-notification-4-fill"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <input class="inputButton" sec:authorize="isAnonymous()" type="button" value="회원가입/로그인" onclick="location.href='/loginform'">
+                        <input class="inputButton" sec:authorize="isAuthenticated()" type="button" value="로그아웃" onclick="location.href='/logout'">
+                    </li>
+                </ul>
+            </span>
+        </div>
+        <div class="navDiv">
+            <a style="text-decoration:none; color: black;" href="/recruitstudy" >소중한 친구들 구하기</a>
+            <label>|</label>
+            <a style="text-decoration:none; color: black;" href="/meta">모임 공간</a>
+            <label>|</label>
+            <a style="text-decoration:none; color: black;" href="/noticeroom">게시판</a>
+            <label>|</label>
+            <a style="text-decoration:none; color: black;" href="/checklist">체크리스트</a>
+            <label>|</label>
+            <a style="text-decoration:none; color: black;" href="/store">스토어</a>
+            <label>|</label>
+            <a style="text-decoration:none; color: black;" href="/mypage">마이페이지</a>
+        </div>
+    </header>
+    <div class="blankDiv">
+        <input type="hidden" value="빈공간">
+    </div>
+    <div class="titleDiv">
+        <input type="hidden" value="타이틀 제목, 부제">
+        <div class="title">
+            스터디원 모집
+        </div>
+        <div class="content1">
+            어떤 스터디원을 모집하고 싶나요?
+        </div>
+        <div class="content2">
+            최대한 자세하게 작성해주세요
+        </div>
+    </div>
+    <div class="bodyDiv">
+        <input type="hidden" value="작성할 내용들">
+        <div class="divTitle">
+            <div class="divTitle1">
+                <span class="divTitle1Span">제목</span>
+            </div>
+            <div class="divTitle2">
+                <input class="divTitle2Input" type="text">
+            </div>
+        </div>
+        <div class="divGroup">
+            <input type="hidden" value="분야">
+            <div class="divGroup1">
+                <span class="divGroup1Span">분야</span>
+            </div>
+            <div class="divGroup2">
+                <select class="divGroup2Select">
+                    <option>몰라</option>
+                    <option>몰라</option>
+                    <option>몰라</option>
+                </select>
+            </div>
+        </div>
+        <div class="divPersonnel">
+            <input type="hidden" value="인원">
+            <div class="divPersonnel1">
+                <span class="divPersonnel1Span">인원</span>
+            </div>
+            <div class="divPersonnel2">
+                <select class="divPersonnel2Select">
+                    <option>1명</option>
+                    <option>2명</option>
+                    <option>3명</option>
+                    <option>4명</option>
+                </select>
+            </div>
+        </div>
+        <div class="divTitleImg">
+            <div class="divTitleImg1">
+                <span class="divTitleImg1Span">대표그림</span>
+            </div>
+            <div class="divTitleImg2">
+                <div class="divTitleImg2Div">
+                    <input type="hidden" value="사진">
+                </div>
+            </div>
+        </div>
+        <div class="divIntroduce">
+            <div class="divIntroduce1">
+                <span class="divIntroduce1Span">
+                    스터디 소개
+                </span>
+            </div>
+            <div class="divIntroduce2">
+                <textarea class="divIntroduce2Text"></textarea>
+            </div>
+        </div>
+        <div class="divButton">
+            <div class="divButtonDiv">
+                <input class="divButtonDivButton" type="button" value="작성완료">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>개인정보 뭐시기 블라블라</div>
+    </div>
+</body>
+</html>

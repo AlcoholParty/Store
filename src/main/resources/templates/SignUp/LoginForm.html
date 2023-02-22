@@ -3,25 +3,427 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="/css/ul.css">
+    <style>
+        html {
+            height: 100%;
+        }
+        body{
+            width: 70%;
+            height: 100%;
+            margin: 0 auto;
+            padding: 0px;
+        }
+        header{
+            position:fixed;
+            padding-top: 10px;
+            width: 70%;
+            height: 80px;
+            background-color: white;
+            border-bottom: 5px solid #57B862;
+        }
+        ul{
+            padding: 0px;
+            margin: 0px;
+            display:flex;
+            float:right;
+        }
+        li{
+            margin: 0px;
+            padding: 0px 0px 0px 15px;
+            list-style:none;
+            display:inline;
+            height: 30px;
+        }
+        .topDiv{
+            height: 50%;
+        }
+        .navDiv{
+            margin-top: 20px;
+            font-size: 30px;
+            width: 100%;
+            height: 50%;
+            display: flex;
+            line-height : 120%;
+            justify-content:space-evenly;
+            background-color: #57B862;
+        }
+        .rightSpan{
+            text-align: center;
+            float:right;
+            font-size:20px;
+            height: 100%;
+        }
+        .inputButton{
+            height: 35px;
+            font-size: 20px;
+            background-color: #57B862;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .leftSpan{
+            height: 100%;
+            font-size:30px;
+            margin-left: 2%;
+            cursor: pointer;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        .icon {
+            position: relative;
+            font-size: 30px;
+            color: rgb(156, 153, 153);
+            transform-origin: top;
+            animation: anim 1s forwards infinite;
+        }
+        .icon::before {
+            content: attr(data-number);
+            position: absolute;
+            top: -5px;
+            right: -10px;
+            width: 20px;
+            height: 20px;
+            background-color: #7EFFB2;
+            font-size: 14px;
+            color: #090909;
+            display: grid;
+            place-items: center;
+            border: 2px solid #090909;
+            border-radius: 50%;
+        }
+        @keyframes anim {
+            10% {
+                rotate: 15deg;
+            }
+            20% {
+                rotate: -15deg;
+            }
+            30% {
+                rotate: 15deg;
+            }
+            50% {
+                rotate: 0deg;
+            }
+        }
+        .blankDiv{
+            width: 100%;
+            height: 200px;
+        }
+        .BodyDiv{
+            width: 70%;
+            height: 60%;
+            margin: 0% 15% 0% 15%;
+        }
+        .formTag{
+            width: 100%;
+            height: 100%;
+        }
+        .BodyDivTop{
+            width: 100%;
+            height: 20%;
+        }
+        .BodyDivTopTitle{
+            width: 100%;
+            height: 100%;
+        }
+        .BodyDivTopTitleTop{
+            width: 90%;
+            height: 70%;
+            margin: 0% 0% 0% 10%;
+            display: grid;
+            font-size: 40px;
+            align-items: center;
+        }
+        .BodyDivTopTitleBottom{
+            width: 100%;
+            height: 30%;
+        }
+        .BodyDivTopTitleBottomText{
+            width: 100%;
+            height: 100%;
+            font-size: 25px;
+            color: red;
+        }
+        .BodyDivMid{
+            width: 100%;
+            height: 40%;
+            display:flex;
+        }
+        .BodyDivMidLeft{
+            width: 70%;
+            height: 100%;
+            display:inline-block;
+        }
+        .BodyDivMidLeftTop{
+            width: 100%;
+            height: 80%;
+        }
+        .BodyDivMidLeftTopTop{
+            width: 95%;
+            height: 50%;
+            margin: 0% 5% 0% 0%;
+            text-align: center;
+            display: grid;
+            align-items: center;
+        }
+        .BodyDivMidLeftTopTopInput{
+            font-size: 35px;
+        }
+        .BodyDivMidLeftTopBottom{
+            width: 95%;
+            height: 50%;
+            margin: 0% 5% 0% 0%;
+            text-align: center;
+            display: grid;
+            align-items: center;
+        }
+        .BodyDivMidLeftTopBottomInput{
+            font-size: 35px;
+        }
+        .BodyDivMidLeftBottom{
+            width: 100%;
+            height: 20%;
+            display: flex;
+        }
+        .BodyDivMidLeftBottomLeft{
+            width: 50%;
+            height: 100%;
+            text-align: center;
+            display: grid;
+            align-items: center;
+            font-size: 20px;
+        }
+        .BodyDivMidLeftBottomRight{
+            width: 50%;
+            height: 100%;
+            text-align: center;
+            display: grid;
+            align-items: center;
+            font-size: 20px;
+        }
+        .BodyDivMidRight{
+            width: 30%;
+            height: 80%;
+            margin: 0% 0% 20% 0%;
+            display:inline-block;
+        }
+        .BodyDivMidRightDiv{
+            width: 70%;
+            height: 90%;
+            margin: 5% 15% 5% 15%;
+            text-align: center;
+            display: grid;
+            align-items: center;
+        }
+        .BodyDivMidRightDivInput{
+            width: 100%;
+            height: 100%;
+            font-size: 30px;
+            background-color: #57B862;
+        }
+        .BodyDivBottom{
+            width: 100%;
+            height: 40%;
+            display: flex;
+        }
+        .BodyDivBottomLeft{
+            width: 70%;
+            height: 100%;
+        }
+        .BodyDivBottomLeftTop{
+            width: 100%;
+            height: 50%;
+            display: flex;
+        }
+        .BodyDivBottomLeftTopLeft{
+            width: 50%;
+            height: 100%;
+        }
+        .BodyDivBottomLeftTopLeftButton{
+            width: 70%;
+            height: 60%;
+            margin: 8% 15% 8% 15%;
+            font-size: 20px;
+            background-color: yellow;
+        }
+        .BodyDivBottomLeftTopRight{
+            width: 50%;
+            height: 100%;
+        }
+        .BodyDivBottomLeftTopRightButton{
+            width: 70%;
+            height: 60%;
+            margin: 8% 15% 8% 15%;
+            font-size: 20px;
+            background-color: green;
+        }
+        .BodyDivBottomLeftBottom{
+            width: 100%;
+            height: 50%;
+            display:flex;
+        }
+        .BodyDivBottomLeftBottomLeft{
+            width: 50%;
+            height: 100%;
+        }
+        .BodyDivBottomLeftBottomLeftButton{
+            width: 70%;
+            height: 60%;
+            margin: 8% 15% 8% 15%;
+            font-size: 20px;
+            background-color: gray;
+        }
+        .BodyDivBottomLeftBottomRight{
+            width: 50%;
+            height: 100%;
+        }
+        .BodyDivBottomLeftBottomRightButton{
+            width: 70%;
+            height: 60%;
+            margin: 8% 15% 8% 15%;
+            font-size: 20px;
+            background-color: gray;
+        }
+        .BodyDivBottomRight{
+            width: 30%;
+            height: 100%;
+        }
+        .BodyDivBottomRightTop{
+            width: 100%;
+            height: 50%;
+        }
+        .BodyDivBottomRightTopText{
+            width: 90%;
+            height: 60%;
+            margin: 10% 0% 8% 10%;
+            font-size: 20px;
+        }
+        .BodyDivBottomRightTopTextTop{
+            width: 100%;
+            height: 45%;
+        }
+    </style>
 </head>
 <body>
     <!-- Spring Security를 사용하기 위해선 반드시 method는 POST를 사용해야 한다. -->
-    <form action="/loginform/login" method="post">
-        <ul>
-            <!-- name은 하나라도 빠짐없이 다 작성해야하며, 각 name명은 시큐리티에서 잡고있는 아이디 비빌번호 변수명과 반드시 일치해야 한다. -->
-            <li><label>아이디 : </label><input name="emailId" type="text"></li>
-            <li><label>비밀번호 : </label><input name="pwd" type="password"></li>
-            <!-- 직접 로그아웃 하기전까지 로그인을 유지시켜주는 체크박스 -->
-            <li><label>로그인 유지하기</label><input name="remember-me" type="checkbox"></li>
-            <!-- 아이디 및 비밀번호가 틀릴 경우 에러 메세지가 등장하는 구역 -->
-            <li><div th:if="${param.error}">
-                <p th:text="${errorMsg}"></p>
-            </div></li>
-        </ul>
-        <input type="submit" value="로그인">
-        <input name="btnJoin" type="button" value="회원가입" onclick="location.href='/joinform'">
-    </form>
+<!--    <form action="/loginform/login" method="post">-->
+<!--        <ul>-->
+<!--            &lt;!&ndash; name은 하나라도 빠짐없이 다 작성해야하며, 각 name명은 시큐리티에서 잡고있는 아이디 비빌번호 변수명과 반드시 일치해야 한다. &ndash;&gt;-->
+<!--            <li><label>아이디 : </label><input name="emailId" type="text"></li>-->
+<!--            <li><label>비밀번호 : </label><input name="pwd" type="password"></li>-->
+<!--            &lt;!&ndash; 직접 로그아웃 하기전까지 로그인을 유지시켜주는 체크박스 &ndash;&gt;-->
+<!--            <li><label>로그인 유지하기</label><input name="remember-me" type="checkbox"></li>-->
+<!--            &lt;!&ndash; 아이디 및 비밀번호가 틀릴 경우 에러 메세지가 등장하는 구역 &ndash;&gt;-->
+<!--            <li><div th:if="${param.error}">-->
+<!--                <p th:text="${errorMsg}"></p>-->
+<!--            </div></li>-->
+<!--        </ul>-->
+<!--        <input type="submit" value="로그인">-->
+<!--        <input name="btnJoin" type="button" value="회원가입" onclick="location.href='/joinform'">-->
+<!--    </form>-->
+    <header>
+        <div class="topDiv">
+            <span class="leftSpan" onclick="location.href='/'">SOJU</span>
+            <span class = "rightSpan">
+                <ul>
+                    <li class="rightSpanText">이용권이 <span>30</span>일 남았습니다.</li>
+                    <li style="cursor: pointer;">
+                        <div class="icon" data-number="5">
+                            <i class="ri-notification-4-fill"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <input class="inputButton" sec:authorize="isAnonymous()" type="button" value="회원가입/로그인" onclick="location.href='/loginform'">
+                        <input class="inputButton" sec:authorize="isAuthenticated()" type="button" value="로그아웃" onclick="location.href='/logout'">
+                    </li>
+                </ul>
+            </span>
+        </div>
+        <div class="navDiv">
+            <a style="text-decoration:none; color: black;" href="/recruitstudy" >소중한 친구들 구하기</a>
+            <label>|</label>
+            <a style="text-decoration:none; color: black;" href="/meta">모임 공간</a>
+            <label>|</label>
+            <a style="text-decoration:none; color: black;" href="/noticeroom">게시판</a>
+            <label>|</label>
+            <a style="text-decoration:none; color: black;" href="/store">스토어</a>
+            <label>|</label>
+            <a style="text-decoration:none; color: black;" href="/mypage">마이페이지</a>
+        </div>
+    </header>
+    <div class="blankDiv">
+        <input type="hidden" value="공간 좀 두기">
+    </div>
+    <div class="BodyDiv">
+        <form class="formTag" action="/loginform/login" method="post">
+            <div class="BodyDivTop">
+                <div class="BodyDivTopTitle">
+                    <div class="BodyDivTopTitleTop">로그인</div>
+                    <div class="BodyDivTopTitleBottom" th:if="${param.error}">
+                        <div class="BodyDivTopTitleBottomText" th:text="${errorMsg}"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="BodyDivMid">
+                <span class="BodyDivMidLeft">
+                    <div class="BodyDivMidLeftTop">
+                        <div class="BodyDivMidLeftTopTop">
+                            <input name="emailId" class="BodyDivMidLeftTopTopInput" type="text">
+                        </div>
+                        <div class="BodyDivMidLeftTopBottom">
+                            <input name="pwd" class="BodyDivMidLeftTopBottomInput" type="text">
+                        </div>
+                    </div>
+                    <div class="BodyDivMidLeftBottom">
+                        <span class="BodyDivMidLeftBottomLeft">
+                            <span>
+                                <input type="checkbox">
+                                <span>아이디 기억하기</span>
+                            </span>
+                        </span>
+                        <span class="BodyDivMidLeftBottomRight">
+                            <span>
+                                <input name="remember-me" type="checkbox">
+                                <span>자동로그인</span>
+                            </span>
+                        </span>
+                    </div>
+                </span>
+                    <span class="BodyDivMidRight">
+                    <div class="BodyDivMidRightDiv">
+                        <input class="BodyDivMidRightDivInput" type="submit" value="로그인">
+                    </div>
+                </span>
+            </div>
+            <div class="BodyDivBottom">
+                <span class="BodyDivBottomLeft">
+                    <div class="BodyDivBottomLeftTop">
+                        <span class="BodyDivBottomLeftTopLeft">
+                            <input class="BodyDivBottomLeftTopLeftButton" type="button" value="카카오톡으로 로그인">
+                        </span>
+                        <span class="BodyDivBottomLeftTopRight">
+                            <input class="BodyDivBottomLeftTopRightButton" type="button" value="네이버로 로그인">
+                        </span>
+                    </div>
+                    <div class="BodyDivBottomLeftBottom">
+                        <span class="BodyDivBottomLeftBottomLeft">
+                            <input class="BodyDivBottomLeftBottomLeftButton" type="button" value="아이디 찾기">
+                        </span>
+                        <span class="BodyDivBottomLeftBottomRight">
+                            <input class="BodyDivBottomLeftBottomRightButton" type="button" value="비밀번호 찾기">
+                        </span>
+                    </div>
+                </span>
+                <span class="BodyDivBottomRight">
+                    <div class="BodyDivBottomRightTop">
+                        <div class="BodyDivBottomRightTopText">
+                            <div class="BodyDivBottomRightTopTextTop">아직회원이 아니신가요?</div>
+                            <a href="/joinform">회원가입 하기</a>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </form>
+    </div>
 <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <!-- 아이디 및 비밀번호가 틀릴 경우 에러 알림창이 등장 -->
     <script th:inline="javascript">

@@ -56,20 +56,21 @@ public class MetaController {
         return "redirect:/meta";
     }
 
-    // 방 이름 및 분야별로 검색
-    @GetMapping("/search")
-    public String searchMeta(Meta.rqSearchMetaList rqSearchMetaList, Model model) { // 1. DTO로 form값을 다 받아온다.
-        // 2. 받아온 DTO를 서비스에 넘겨준다.
-        List<Meta.rpSearchMetaList> rpSearchMetaList = metaService.searchMetaList(rqSearchMetaList);
-        // 8. 반환받은 List형태의 DTO를 바인딩한다.
-        model.addAttribute("searchMetaList", rpSearchMetaList);
-        // 메타 메인 페이지로 이동
-        return "Meta/MetaRoom";
-    }
+//    // 방 이름 및 분야별로 검색
+//    @GetMapping("/search")
+//    public String searchMeta(Meta.rqSearchMetaList rqSearchMetaList, Model model) { // 1. DTO로 form값을 다 받아온다.
+//        // 2. 받아온 DTO를 서비스에 넘겨준다.
+//        List<Meta.rpSearchMetaList> rpSearchMetaList = metaService.searchMetaList(rqSearchMetaList);
+//        // 8. 반환받은 List형태의 DTO를 바인딩한다.
+//        model.addAttribute("searchMetaList", rpSearchMetaList);
+//        // 메타 메인 페이지로 이동
+//        return "Meta/MetaRoom";
+//    }
 
     // 스터디룸 페이지
     @GetMapping("/studyroom") // Principal - 자바의 표준 시큐리티 기술로, 로그인 유저의 정보를 담고 있다.
     public String studyRoom(@RequestParam long metaIdx, Principal principal, Model model) { // 1. 파라미터로 입장한 방 번호를 받아온다.
+        System.out.println("1");
         // 2. 받아온 방 번호를 서비스에 넘겨준다.
         Meta.rpEntrance rpEntrance = metaService.entrance(metaIdx);
         // 7. 반환받은 DTO가 존재하는지 체크한다.
@@ -101,6 +102,7 @@ public class MetaController {
                 // 20. 반환받은 DTO를 바인딩한다.
                 model.addAttribute("metaRoom", metaRoom);
                 // 스터디룸 페이지로 이동
+                System.out.println(1);
                 return "Meta/StudyRoom";
             }
         }

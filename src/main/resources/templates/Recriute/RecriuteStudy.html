@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        .blankDiv{
+            width: 100%;
+            height: 150px;
+        }
+        .titleDiv{
+            width: 70%;
+            margin: 0% 15% 0% 15%;
+            height: 10%;
+        }
+        .title{
+            width: 100%;
+            height: 40%;
+            margin-top: 10%;
+            font-size: 40px;
+            text-align: center;
+        }
+        .infoDiv{
+            width: 70%;
+            height: 100%;
+            margin: 0% 15% 0% 15%;
+        }
+        .infoDivBox{
+            width: 100%;
+            height: 8%;
+        }
+        .infoDivBoxDiv{
+            float: right;
+            width: 15%;
+            height: 60%;
+            background-color: #57B862;
+            text-align: center;
+            display: grid;
+            align-items: center;
+        }
+        .infoDivBoxDivText{
+            font-size: 35px;
+            display: inline-block;
+        }
+        .infoDivTitle{
+            width: 100%;
+            height: 8%;
+            display:flex;
+        }
+        .infoDivTitle1{
+            width: 30%;
+            height: 100%;
+            text-align: center;
+            display: grid;
+            align-items: center;
+        }
+        .infoDivTitle1Span{
+            font-size: 35px;
+            display: inline-block;
+        }
+        .infoDivTitle2{
+            width: 70%;
+            height: 100%;
+            text-align: center;
+            display: grid;
+            align-items: center;
+        }
+        .infoDivTitle2Input{
+            padding: 0%;
+            width: 90%;
+            height: 40%;
+            font-size: 35px;
+        }
+        .infoDivUserName{
+            width: 100%;
+            height: 8%;
+            display:flex;
+        }
+        .infoDivUserName1{
+            width: 30%;
+            height: 100%;
+            text-align: center;
+            display: grid;
+            align-items: center;
+        }
+        .infoDivUserName1Span{
+            font-size: 35px;
+            display: inline-block;
+        }
+        .infoDivUserName2{
+            width: 70%;
+            height: 100%;
+            text-align: center;
+            display: grid;
+            align-items: center;
+        }
+        .infoDivUserName2Input{
+            padding: 0%;
+            width: 90%;
+            height: 40%;
+            font-size: 35px;
+        }
+        .infoDivGroup{
+            width: 100%;
+            height: 8%;
+            display:flex;
+        }
+        .infoDivGroup1{
+            width: 30%;
+            height: 100%;
+            text-align: center;
+            display: grid;
+            align-items: center;
+        }
+        .infoDivGroup1Span{
+            font-size: 35px;
+            display: inline-block;
+        }
+        .infoDivGroup2{
+            width: 70%;
+            height: 100%;
+            text-align: center;
+            display: grid;
+            align-items: center;
+        }
+        .infoDivGroup2Input{
+            padding: 0%;
+            width: 90%;
+            height: 40%;
+            font-size: 35px;
+        }
+        .infoDivPersonnel{
+            width: 100%;
+            height: 8%;
+            display:flex;
+        }
+        .infoDivPersonnel1{
+            width: 30%;
+            height: 100%;
+            text-align: center;
+            display: grid;
+            align-items: center;
+        }
+        .infoDivPersonnel1Span{
+            font-size: 35px;
+            display: inline-block;
+        }
+        .infoDivPersonnel2{
+            width: 70%;
+            height: 100%;
+            text-align: center;
+            display: grid;
+            align-items: center;
+        }
+        .infoDivPersonnel2Input{
+            padding: 0%;
+            width: 90%;
+            height: 40%;
+            font-size: 35px;
+        }
+        .infoDivInformation{
+            width: 100%;
+            height: 40%;
+        }
+        .infoDivInformation1{
+            width: 100%;
+            height: 15%;
+            font-size: 40px;
+        }
+        .infoDivInformation1Span{
+            display: inline-block;
+            margin: 2% 0% 0% 5%;
+        }
+        .infoDivInformation2{
+            width: 100%;
+            height: 85%;
+        }
+        .infoDivInformation2Text{
+            width: 99%;
+            height: 95%;
+            font-size: 30px;
+            resize: none;
+        }
+        .infoDivButtons{
+            width: 100%;
+            height: 20%;
+        }
+        .infoDivButtonsTop{
+            width: 100%;
+            height: 50%;
+            display: flex;
+        }
+        .infoDivButtonsTopLeft{
+            width: 50%;
+            height: 100%;
+            padding: 5% 0% 0% 0%;
+        }
+        .infoDivButtonsTopLeftInput{
+            width: 30%;
+            height: 50%;
+            font-size: 30px;
+            margin: 0% 10% 0% 0%;
+        }
+        .infoDivButtonsTopLeftText{
+            font-size: 30px;
+        }
+        .infoDivButtonsTopRight{
+            float: right;
+            margin: 0% 0% 0% 20%;
+            padding: 5% 0% 0% 0%;
+            width: 30%;
+            height: 100%;
+        }
+        .infoDivButtonsTopRightInput1{
+            float: right;
+            width: 40%;
+            height: 50%;
+            font-size: 30px;
+            margin: 0% 0% 0% 10%;
+        }
+        .infoDivButtonsTopRightInput2{
+            float: right;
+            width: 40%;
+            height: 50%;
+            font-size: 30px;
+            margin: 0% 0% 0% 0%;
+        }
+        .infoDivButtonsBottom{
+            width: 100%;
+            height: 50%;
+        }
+        .infoDivButtonsBottomRight{
+            float: right;
+            margin: 0% 0% 0% 20%;
+            padding: 3% 0% 0% 0%;
+            width: 30%;
+            height: 100%;
+        }
+        .infoDivButtonsBottomRightInput{
+            float: right;
+            width: 60%;
+            height: 50%;
+            font-size: 30px;
+            margin: 0% 0% 0% 0%;
+        }
+        .commentDiv{
+            width: 70%;
+            height: 60%;
+            margin: 0% 15% 0% 15%;
+        }
+        .commentDivTitle{
+            width: 100%;
+            height: 10%;
+            border-bottom: 2px solid black;
+        }
+        .commentDivTitleDiv{
+            width: 100%;
+            height: 70%;
+            padding: 0% 0% 0% 5%;
+            font-size: 30px;
+        }
+        .commentDivInput{
+            width: 100%;
+            height: 10%;
+        }
+        .commentDivInputDiv{
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+        .commentDivInputDiv1{
+            width: 70%;
+            height: 70%;
+            margin: 4% 0% 0% 0%;
+        }
+        .commentDivInputDiv1Input{
+            font-size: 25px;
+            width: 80%;
+            height: 80%;
+            margin: 0% 10% 0% 10%;
+        }
+        .commentDivInputDiv2{
+            width: 30%;
+            height: 70%;
+            margin: 4% 0% 0% 0%;
+        }
+        .commentDivInputDiv2Input{
+            font-size: 25px;
+            width: 40%;
+            height: 100%;
+            margin: 0% 20% 0% 40%;
+        }
+        .commentDivComments{
+            width: 100%;
+            height: 60%;
+        }
+        .commentDivCommentsDiv{
+            margin: 5% 0% 0% 5%;
+            padding: 5% 5% 0% 5%;
+            width: 80%;
+            height: 40%;
+            border: 1px solid black;
+        }
+        .commentDivCommentsDivTop{
+            width: 100%;
+            height: 30%;
+            display: flex;
+        }
+        .commentDivCommentsDivTopLeft{
+            width: 70%;
+            height: 100%;
+        }
+        .commentDivCommentsDivTopLeftSpan{
+            font-size: 20px;
+        }
+        .commentDivCommentsDivTopRight{
+            width: 30%;
+            height: 100%;
+        }
+        .commentDivCommentsDivTopRight1{
+            float: right;
+            font-size: 20px;
+            margin: 0% 5% 0% 5%;
+        }
+        .commentDivCommentsDivTopRight2{
+            float: right;
+            font-size: 20px;
+        }
+        .commentDivCommentsDivBottom{
+            width: 100%;
+            height: 70%;
+            font-size: 20px;
+        }
+        .footer{
+            width: 100%;
+            height: 2%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="topDiv">
+            <span class="leftSpan" onclick="location.href='/'">SOJU</span>
+            <span class = "rightSpan">
+                <ul>
+                    <li class="rightSpanText">이용권이 <span>30</span>일 남았습니다.</li>
+                    <li style="cursor: pointer;">
+                        <div class="icon" data-number="5">
+                            <i class="ri-notification-4-fill"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <input class="inputButton" sec:authorize="isAnonymous()" type="button" value="회원가입/로그인" onclick="location.href='/loginform'">
+                        <input class="inputButton" sec:authorize="isAuthenticated()" type="button" value="로그아웃" onclick="location.href='/logout'">
+                    </li>
+                </ul>
+            </span>
+        </div>
+        <div class="navDiv">
+            <a style="text-decoration:none; color: black;" href="/recruitstudy" >소중한 친구들 구하기</a>
+            <label>|</label>
+            <a style="text-decoration:none; color: black;" href="/meta">모임 공간</a>
+            <label>|</label>
+            <a style="text-decoration:none; color: black;" href="/noticeroom">게시판</a>
+            <label>|</label>
+            <a style="text-decoration:none; color: black;" href="/checklist">체크리스트</a>
+            <label>|</label>
+            <a style="text-decoration:none; color: black;" href="/store">스토어</a>
+            <label>|</label>
+            <a style="text-decoration:none; color: black;" href="/mypage">마이페이지</a>
+        </div>
+    </header>
+    <div class="blankDiv">
+        <input type="hidden" value="빈공간">
+    </div>
+    <div class="titleDiv">
+        <input type="hidden" value="타이틀 제목, 부제">
+        <div class="title">
+            스터디원 모집
+        </div>
+    </div>
+    <div class="infoDiv">
+        <div class="infoDivBox">
+            <div class="infoDivBoxDiv">
+                <span class="infoDivBoxDivText">모집중</span>
+            </div>
+        </div>
+        <div class="infoDivTitle">
+            <div class="infoDivTitle1">
+                <span class="infoDivTitle1Span">제목</span>
+            </div>
+            <div class="infoDivTitle2">
+                <input class="infoDivTitle2Input" type="text">
+            </div>
+        </div>
+        <div class="infoDivUserName">
+            <div class="infoDivUserName1">
+                <span class="infoDivUserName1Span">작성자</span>
+            </div>
+            <div class="infoDivUserName2">
+                <input class="infoDivUserName2Input" type="text">
+            </div>
+        </div>
+        <div class="infoDivGroup">
+            <div class="infoDivGroup1">
+                <span class="infoDivGroup1Span">분야</span>
+            </div>
+            <div class="infoDivGroup2">
+                <input class="infoDivGroup2Input" type="text">
+            </div>
+        </div>
+        <div class="infoDivPersonnel">
+            <div class="infoDivPersonnel1">
+                <span class="infoDivPersonnel1Span">모집인원</span>
+            </div>
+            <div class="infoDivPersonnel2">
+                <input class="infoDivPersonnel2Input" type="text">
+            </div>
+        </div>
+        <div class="infoDivInformation">
+            <div class="infoDivInformation1">
+                <span class="infoDivInformation1Span">
+                    스터디 소개
+                </span>
+            </div>
+            <div class="infoDivInformation2">
+                <textarea class="infoDivInformation2Text"></textarea>
+            </div>
+        </div>
+        <div class="infoDivButtons">
+            <input type="hidden" value="버튼들">
+            <div class="infoDivButtonsTop">
+                <div class="infoDivButtonsTopLeft">
+                    <input class="infoDivButtonsTopLeftInput" type="button" value="찜하기">
+                    <label class="infoDivButtonsTopLeftText">65</label>
+                </div>
+                <div class="infoDivButtonsTopRight">
+                    <input class="infoDivButtonsTopRightInput1" type="button" value="글삭제">
+                    <input class="infoDivButtonsTopRightInput2" type="button" value="글수정">
+                </div>
+            </div>
+            <div class="infoDivButtonsBottom">
+                <div class="infoDivButtonsBottomRight">
+                    <input class="infoDivButtonsBottomRightInput" type="button" value="신청하기">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="commentDiv">
+        <div class="commentDivTitle">
+            <div class="commentDivTitleDiv">
+                <span class="commentDivTitleSpan">댓글</span>
+            </div>
+        </div>
+        <div class="commentDivInput">
+            <div class="commentDivInputDiv">
+                <div class="commentDivInputDiv1">
+                    <input class="commentDivInputDiv1Input" type="text">
+                </div>
+                <div class="commentDivInputDiv2">
+                    <input class="commentDivInputDiv2Input" type="button" value="댓글작성">
+                </div>
+            </div>
+        </div>
+        <div class="commentDivComments">
+            <!-- 이걸 리스트로 돌리면 될꺼같음 -->
+            <div class="commentDivCommentsDiv">
+                <div class="commentDivCommentsDivTop">
+                    <div class="commentDivCommentsDivTopLeft">
+                        <span class="commentDivCommentsDivTopLeftSpan">
+                        댓글 작성자
+                        </span>
+                    </div>
+                    <div class="commentDivCommentsDivTopRight">
+                        <input class="commentDivCommentsDivTopRight1" type="button" value="삭제">
+                        <input class="commentDivCommentsDivTopRight2" type="button" value="수정">
+                    </div>
+                </div>
+                <div class="commentDivCommentsDivBottom">
+                    댓글 내용
+                </div>
+            </div>
+            <div class="commentDivCommentsDiv">
+                <div class="commentDivCommentsDivTop">
+                    <div class="commentDivCommentsDivTopLeft">
+                        <span class="commentDivCommentsDivTopLeftSpan">
+                        댓글 작성자
+                        </span>
+                    </div>
+                    <div class="commentDivCommentsDivTopRight">
+                        <input class="commentDivCommentsDivTopRight1" type="button" value="삭제">
+                        <input class="commentDivCommentsDivTopRight2" type="button" value="수정">
+                    </div>
+                </div>
+                <div class="commentDivCommentsDivBottom">
+                    댓글 내용
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>개인정보 뭐시기 블라블라</div>
+    </div>
+</body>
+</html>

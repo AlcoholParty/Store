@@ -18,7 +18,7 @@ public class Meta {
                           // 하지만 long 즉, 원시타입으로 작성하면 null값을 허용하지 않기 때문에 오류가 난다.
                           // 그래서 Long 즉, 참조타입으로 작성해야 null값을 허용해서 값이 제대로 들어가게 된다.
 
-    @Column(length = 50, nullable = false)
+    @Column(length = 50)
     private String metaTitle;
 
     @Column(length = 10, nullable = false)

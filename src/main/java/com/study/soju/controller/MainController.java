@@ -24,5 +24,20 @@ public class MainController {
         model.addAttribute("errorMsg", errorMsg);
         return "SignUp/LoginForm";
     }
-
+    @GetMapping("/recruitstudy")
+    public String recruitstudy(){
+        return "Recriute/Recriute";
+    }
+    @GetMapping("/recruitstudy/1")
+    public String recruitstudyForm(){
+        return "Recriute/RecriuteStudy";
+    }
+    @GetMapping("/recruitstudy/writeform")
+    public String writeForm(){
+        return "Recriute/WriteForm";
+    }
+    @GetMapping("/metatest")
+    public String metatest(){
+        return "Meta/SelfStudyRoom";
+    }
 }
